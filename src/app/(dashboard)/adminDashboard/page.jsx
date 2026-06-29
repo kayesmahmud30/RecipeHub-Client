@@ -12,11 +12,11 @@ const AdminDashboard = async () => {
         const premiumUser = await protectedFetch('/api/premiumuser')
          const reports = await getReports('/api/reports')
   return (
-    <div className="p-6 bg-[var(--background)] text-[var(--foreground)] min-h-screen">
+    <div className="py-4 px-8 bg-[var(--background)] text-[var(--foreground)] min-h-screen">
       {}
       <div className="mb-8">
         <h1 className="text-3xl font-bold tracking-tight text-[var(--secondary)]">Admin Dashboard</h1>
-        <p className="text-sm text-[var(--muted)] mt-1">Overview of your platform's current statistics</p>
+        <p className="text-sm text-[var(--muted)] mt-1">Overview of your platforms current statistics</p>
       </div>
 
       {}

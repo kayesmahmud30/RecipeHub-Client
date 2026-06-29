@@ -48,7 +48,7 @@ const myPurchasedPage = async () => {
 
 
   return (
-    <div>
+    <div className='py-4 px-8'>
        <div className='mb-6 space-y-1'>
         <h1 className='text-2xl md:text-3xl lg:text-4xl text-primary font-extralight'>My purchased Recipes</h1>
       <p className='text-sm font-bold text-secondary'>Recipe Management Table</p>
