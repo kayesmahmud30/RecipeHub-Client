@@ -2,7 +2,6 @@
 
 RecipeHub is a modern recipe-sharing platform that brings food enthusiasts, home cooks, and professional chefs together in one community. Users can discover recipes from around the world, share their own culinary creations, save favorite dishes, and support talented creators by purchasing premium recipes. The platform encourages knowledge sharing, creativity, and a love for cooking while providing a seamless, secure, and personalized experience across all devices.
 
-
 ## 🌐 Live Demo
 
 - Live Site: https://recipe-hub-ashen-phi.vercel.app
@@ -29,28 +28,26 @@ RecipeHub is a modern recipe-sharing platform that brings food enthusiasts, home
 
 ### 💻 Frontend
 
-* Next.js
-* React.js
-* JavaScript (ES6+)
-* Tailwind CSS
-* HeroUI
-* Framer Motion
-* Lucide Icons
+- Next.js
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- HeroUI
+- Framer Motion
+- Lucide Icons
 
 ### ⚙️ Backend
 
-* Node.js
-* Express.js
-* Better Auth
-* JWT (JSON Web Tokens)
-* Stripe
-* Cloudinary
+- Node.js
+- Express.js
+- Better Auth
+- JWT (JSON Web Tokens)
+- Stripe
+- Cloudinary
 
 ### 🗄️ Database
 
-* MongoDB
-
-
+- MongoDB
 
 ## 🚀 Run Locally
 
