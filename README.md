@@ -23,3 +23,20 @@ RecipeHub is a modern recipe sharing platform where users can discover, create, 
 - Dark/Light theme
 - Responsive UI with Framer Motion animations
 - Pagination and category filtering
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React.js
+- Javascript (ES6+)
+- Tailwind CSS
+- HeroUI
+- Better Auth
+- Cloudinary
+- JWT
+- Framer Motion
+- Stripe
+- MongoDB
+- Lucid Icons
+- Express.js
+- Node.js
