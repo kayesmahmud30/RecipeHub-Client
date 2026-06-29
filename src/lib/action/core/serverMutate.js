@@ -1,3 +1,5 @@
+'use server'
+
 import { getUserToken } from "../getSession";
 
 const baseUrl = process.env.NEXT_PUBLIC_SERVER_BASE_URL || 'http://localhost:8000';

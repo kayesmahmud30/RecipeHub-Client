@@ -1,3 +1,4 @@
+'use server'
 
 import { protectedFetch } from "./core/serverFetch"
 

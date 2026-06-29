@@ -19,12 +19,18 @@ export const getSessionData = async ()  => {
 export const getUserToken = async () => {
   try {
     const reqHeaders = await headers();
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-    const res = await fetch(`${baseUrl}/api/auth/token`, { headers: reqHeaders });
+    const cookieHeader = reqHeaders.get('cookie');
+    const baseUrl = process.env.BETTER_AUTH_URL || process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const tokenUrl = `${baseUrl}/api/auth/token`;
+    const res = await fetch(tokenUrl, {
+      headers: cookieHeader ? { cookie: cookieHeader } : {},
+      cache: 'no-store',
+    });
     if (res.ok) {
       const data = await res.json();
       return data.token;
     }
+    console.error("Token fetch failed:", res.status, "from", tokenUrl);
   } catch (err) {
     console.error("Failed to get JWT token", err);
   }

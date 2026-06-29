@@ -1,3 +1,5 @@
+'use server'
+
 import { serverMutate } from "./core/serverMutate";
 
 export const postReport = async (path, data) =>{

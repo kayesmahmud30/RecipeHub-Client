@@ -1,3 +1,5 @@
+'use server'
+
 import { getUserToken } from "../getSession";
 
 const baseUrl = process.env.NEXT_PUBLIC_SERVER_BASE_URL || 'http://localhost:8000';
@@ -5,7 +7,6 @@ const baseUrl = process.env.NEXT_PUBLIC_SERVER_BASE_URL || 'http://localhost:800
 
 export const authHeader = async () => {
   const token = await getUserToken();
-  console.log("SENDING TOKEN TO BACKEND:", token);
   const header = token ? {
     authorization: `Bearer ${token}`
   } : {}

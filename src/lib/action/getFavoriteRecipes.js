@@ -1,3 +1,5 @@
+'use server'
+
 import { protectedFetch } from "./core/serverFetch"
 
 export const getFavoriteRecipes = async (path) => {
