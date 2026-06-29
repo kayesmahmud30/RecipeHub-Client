@@ -10,3 +10,16 @@ RecipeHub is a modern recipe sharing platform where users can discover, create, 
 
 - Client: https://github.com/kayesmahmud30/RecipeHub-Client
 - Server: https://github.com/kayesmahmud30/RecipeHub-Server
+
+## ✨ Features
+
+- Better Auth authentication (Email/Password & Google)
+- Browse and view recipe details
+- Like, favorite, purchase, and report recipes
+- Stripe payment integration for recipe purchases and premium membership
+- User dashboard (Recipes, Favorites, Purchased Recipes, Profile)
+- Admin dashboard (Users, Recipes, Reports, Transactions)
+- Featured & Popular recipes
+- Dark/Light theme
+- Responsive UI with Framer Motion animations
+- Pagination and category filtering
