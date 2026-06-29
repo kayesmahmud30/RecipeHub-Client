@@ -67,3 +67,7 @@ NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
 Email: admin@mail.com
 Password: Admin123
 ```
+
+## 📄 License
+
+This project is developed for educational and assessment purposes.
