@@ -46,6 +46,9 @@ RecipeHub is a modern recipe-sharing platform that brings food enthusiasts, home
 * Stripe
 * Cloudinary
 
+### 🗄️ Database
+
+* MongoDB
 
 
 
