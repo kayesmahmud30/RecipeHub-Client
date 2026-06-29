@@ -41,6 +41,7 @@ RecipeHub is a modern recipe sharing platform where users can discover, create, 
 - Express.js
 - Node.js
 
+
 ## 🚀 Run Locally
 
 ```bash
@@ -58,4 +59,11 @@ Create a `.env` file and add:
 NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_BETTER_AUTH_URL=your_auth_url
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
+```
+
+## 👤 Admin Credentials
+
+```text
+Email: admin@mail.com
+Password: Admin123
 ```
