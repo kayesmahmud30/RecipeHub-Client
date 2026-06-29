@@ -13,7 +13,10 @@ const addRecipePage = async() => {
   const data = await getPlan(`/api/plans?planId=${user.plan}`);
   
   
-  const plan = data?.find(p => p.planId === user.plan) || { planId: user.plan || 'free', maxRecipePost: 2 };
+  let plan = data?.find(p => p.planId === user.plan) || { planId: user.plan || 'free', maxRecipePost: 2 };
+  if (user.plan === 'Recipehub_Premium') {
+    plan = { ...plan, maxRecipePost: Infinity };
+  }
   
   console.log(plan, 'plan from user id');
   if (usersAppliedRecipes.length >= plan.maxRecipePost) {
