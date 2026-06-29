@@ -37,6 +37,14 @@ RecipeHub is a modern recipe-sharing platform that brings food enthusiasts, home
 * Framer Motion
 * Lucide Icons
 
+### ⚙️ Backend
+
+* Node.js
+* Express.js
+* Better Auth
+* JWT (JSON Web Tokens)
+* Stripe
+* Cloudinary
 
 
 
