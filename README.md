@@ -40,3 +40,12 @@ RecipeHub is a modern recipe sharing platform where users can discover, create, 
 - Lucid Icons
 - Express.js
 - Node.js
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/kayesmahmud30/RecipeHub-Client.git
+cd RecipeHub-Client
+npm install
+npm run dev
+```
