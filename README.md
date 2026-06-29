@@ -67,6 +67,7 @@ NEXT_PUBLIC_API_URL=your_api_url
 NEXT_PUBLIC_BETTER_AUTH_URL=your_auth_url
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_publishable_key
 STRIPE_SECRET_KEY=your_secret_key
+CLOUDINARY_CLOUD_NAME=your_cloud_name
 ```
 
 ## 👤 Admin Credentials
