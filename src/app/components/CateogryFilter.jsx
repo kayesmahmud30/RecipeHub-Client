@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 
 const categories = [
-  "MainCourse",
+  "Main Course",
   "Appetizer",
   "Breakfast",
   "Soup",
@@ -13,10 +13,10 @@ const categories = [
   "Dessert",
   "Snacks",
   "Beverage",
-  "Bread & Bakery",
-  "Rice & Biryani",
+  "Bread and Bakery",
+  "Rice and Biryani",
   "Curry",
-  "Grill & BBQ",
+  "Grill and BBQ",
   "Vegetarian",
   "Seafood",
   "Street Food",

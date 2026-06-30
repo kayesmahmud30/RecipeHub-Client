@@ -63,7 +63,7 @@ const AdminDashboard = async () => {
           <div className="flex justify-between items-start">
             <div>
               <p className="text-sm font-medium text-[var(--muted)] uppercase tracking-wider">Total Recipes</p>
-              <h3 className="text-3xl font-bold mt-2 text-[var(--secondary)]">{recipes?.length || 0}</h3>
+              <h3 className="text-3xl font-bold mt-2 text-[var(--secondary)]">{recipeData?.totalRecipes || recipes?.length || 0}</h3>
             </div>
             <div className="p-3 rounded-xl bg-gray-100 text-[var(--secondary)] group-hover:bg-[var(--secondary)] group-hover:text-[var(--secondary-foreground)] transition-colors duration-200">
               <Utensils size={24} />

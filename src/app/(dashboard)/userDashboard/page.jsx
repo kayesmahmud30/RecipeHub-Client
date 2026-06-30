@@ -12,7 +12,7 @@ const userDashboard = async () => {
   const data = await getRecipeByAuthorID(
     `/api/recipe/authorId?authorId=${user.id}`,
   );
-  const recipes = data.slice(0, 8);
+  const recipes = data;
   const userId = user.id;
   const favoriteRecipes = await getFavoriteRecipes(
     `/app/myFavorites?userId=${userId}`,
@@ -112,7 +112,7 @@ const userDashboard = async () => {
                   <Table.Column>Category</Table.Column>
                 </Table.Header>
                 <Table.Body>
-                  {recipes.map((recipe) => (
+                  {recipes.slice(0, 5).map((recipe) => (
                     <Table.Row key={recipe._id}>
                       <Table.Cell className="font-medium">
                         {recipe.recipeName}
