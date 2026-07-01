@@ -17,7 +17,7 @@ const page = async ({searchParams}) => {
         
         const category = resolvedSearchParams.category || ''; 
       
-        // ব্যাকএন্ড API-তে কুয়েরি প্যারামিটারসহ হিট করা
+
         const recipeData = await serverFetch(`/api/recipes?page=${page}&size=${size}&category=${category}`);
        
         const recipes = recipeData?.recipes || [];

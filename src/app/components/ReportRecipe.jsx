@@ -14,7 +14,7 @@ export function ReportRecipe({ user, recipe }) {
   const onSubmit = async (e) => {
     e.preventDefault();
     
-    // FormData ব্যবহার করে মেসেজ নেওয়া
+
     const formData = new FormData(e.currentTarget);
     const message = formData.get("message");
 
@@ -42,8 +42,8 @@ export function ReportRecipe({ user, recipe }) {
       const uploaded = await postReport('/api/reports', reportData);
       if (uploaded && uploaded.success) {
         toast.success(uploaded.message);
-        setReason(""); // রিজন স্টেট রিসেট করা
-        setIsOpen(false); // <--- সাকসেস হলে মোডাল অটো ক্লোজ হয়ে যাবে
+        setReason(""); 
+        setIsOpen(false); 
       } else {
         toast.danger(uploaded?.message || "Something went wrong");
       }
