@@ -1,10 +1,11 @@
 'use client'
 import React from 'react';
 import {Label, ListBox, Select} from "@heroui/react";
-import { useRouter, useSearchParams } from 'next/navigation';
+import { redirect, useRouter, useSearchParams } from 'next/navigation';
 
 
 const categories = [
+  "All",
   "Main Course",
   "Appetizer",
   "Breakfast",
@@ -31,10 +32,14 @@ const CategoryFilter = ({category}) => {
 
  
    const handleCategory = (newCategory) => {
+    if (newCategory === "All") {
+    redirect("/recipes");
+    }// If the selected category is the same as the current one, do nothing
     if (newCategory == "") return;
 
     const params = new URLSearchParams(searchParams.toString());
     params.set("category", newCategory.toString());
+    params.set("page", "1"); // Reset pagination to first page when changing category
 
     router.push(`?${params.toString()}`);
   };
