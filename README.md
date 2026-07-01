@@ -75,8 +75,8 @@ CLOUDINARY_API_SECRET=your_api_secret
 ## 👤 Admin Credentials
 
 ```text
-Email: admin@mail.com
-Password: Admin123
+Email: <mail>
+Password: <password>
 ```
 
 ## 📄 License
