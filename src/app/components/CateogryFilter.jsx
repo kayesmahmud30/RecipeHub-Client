@@ -34,6 +34,7 @@ const CategoryFilter = ({category}) => {
    const handleCategory = (newCategory) => {
     if (newCategory === "All") {
     redirect("/recipes");
+    return;
     }// If the selected category is the same as the current one, do nothing
     if (newCategory == "") return;
 
